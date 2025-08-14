@@ -1,2 +1,1 @@
-# IT-Daily-Checklist
-IT Daily Checklist
+Unzip into htdocs, run installer.php or import init_populated.sql, login admin@example.com/admin123 or paul@example.com/user123

@@ -1,0 +1,1 @@
+<?php require 'config.php'; if(!is_logged_in()){ header('Location:index.php'); exit; } $uid = $_SESSION['user_id']; $today = date('Y-m-d'); $del = $mysqli->prepare('DELETE FROM user_tasks WHERE user_id = ? AND task_date = ?'); $del->bind_param('is', $uid, $today); $del->execute(); header('Location:user_dashboard.php'); exit; ?>
